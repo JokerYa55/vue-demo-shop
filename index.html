@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Vue.js Pet Depot</title>
+    <meta charset="utf-8">
     <script src="https://unpkg.com/vue"></script>
     <link rel="stylesheet" type="text/css" href="css/app.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -9,7 +9,35 @@
 </head>
 
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <title>{{title}}</title>
+        <div class="page-header">
+            <h1>Example page header <small>Subtext for header</small></h1>
+          </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">                
+                Panel content
+            </div>
+            <div class="panel-footer info-block" >
+                <div class ="info-block-item">
+                    <div class="info-block-item-header">О компании</div>
+                </div>
+                <div class ="info-block-item">
+                    <div class="info-block-item-header">Покупателям</div>
+                </div>
+                <div class ="info-block-item">
+                    <div class="info-block-item-header">Доставка</div>
+                </div>
+                <div class ="info-block-item">
+                    <div class="info-block-item-header">Сотрудничество</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="script.js" type="text/javascript"></script>
 
 </html>
