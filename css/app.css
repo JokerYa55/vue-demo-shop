@@ -1,7 +1,4 @@
-.info-block{
-    display: flex;
-    justify-content: center;
-}
+
 
 .info-block-item{
     margin-right: 30px;
@@ -9,5 +6,5 @@
 }
 
 .info-block-item-header{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
