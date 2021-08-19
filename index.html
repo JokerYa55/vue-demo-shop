@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <script src="https://unpkg.com/vue"></script>
     <link rel="stylesheet" type="text/css" href="css/app.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,57 +19,16 @@
             <div class="row">
                 <div class="col-4">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
-                      </ul>
+                        <div v-for="item in categoryList">
+                            <category-item v-bind:item="item"></category-item>
+                        </div>    
+                    </ul>
                 </div>
                 <div class="col">
-                    <ul class="list-group list-group-horizontal">
-                        <li class="list-group-item">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                <h5 class="card-title">Название книги</h5>
-                                <p class="card-text">Описание книги.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="card" style="width: 18rem;">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                <h5 class="card-title">Название книги</h5>
-                                <p class="card-text">Описание книги.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </li>
+                    <div v-for="item in bookList">
+                        <book-item v-bind:item="item"></book-item>
+                    </div>
                         
-                      </ul>
-                      <ul class="list-group list-group-horizontal-sm">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                      </ul>
-                      <ul class="list-group list-group-horizontal-md">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                      </ul>
-                      <ul class="list-group list-group-horizontal-lg">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                      </ul>
-                      <ul class="list-group list-group-horizontal-xl">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                      </ul>
                 </div>
             </div>
             <div class="row">
@@ -80,9 +38,9 @@
                     </div>
                     <div class="col">
                         <ul>
-                            <li>Первый пункт</li>
-                            <li>Второй пункт</li>
-                            <li>Третий пункт</li>
+                            <div v-for="item in aboutCompanyMenuList">
+                                <about-menu-item v-bind:item="item"></about-menu-item>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -92,9 +50,9 @@
                     </div>
                     <div class="col">
                         <ul>
-                            <li>Первый пункт</li>
-                            <li>Второй пункт</li>
-                            <li>Третий пункт</li>
+                            <div v-for="item in buyersMenuList">
+                                <about-menu-item v-bind:item="item"></about-menu-item>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -104,9 +62,9 @@
                     </div>
                     <div class="col">
                         <ul>
-                            <li>Первый пункт</li>
-                            <li>Второй пункт</li>
-                            <li>Третий пункт</li>
+                            <div v-for="item in buyersMenuList">
+                                <about-menu-item v-bind:item="item"></about-menu-item>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -116,9 +74,9 @@
                     </div>
                     <div class="col">
                         <ul>
-                            <li>Первый пункт</li>
-                            <li>Второй пункт</li>
-                            <li>Третий пункт</li>
+                            <div v-for="item in buyersMenuList">
+                                <about-menu-item v-bind:item="item"></about-menu-item>
+                            </div>
                         </ul>
                     </div>
                 </div>
